@@ -1,0 +1,43 @@
+{
+    "menu":{
+        "header":"SVG Viewer",
+        "items":[
+            {
+                "id":"Open",
+                "label": "Titulinis"
+            },
+            {
+                "id":"index.php",
+                "label":"Naujas vartotojas"
+            },
+            null,
+            {
+                "id":"Users",
+                "label":"Vartotojai"
+            },
+            {
+                "id":"Photos",
+                "label":"Galerija"
+            },
+            null,
+            {
+                "id":"Quality"
+            },
+            {
+                "id":"Find",
+                "label":"Surasti"
+            },
+            {
+                "id":"Contacts",
+                "label":"Kontaktai"
+            },
+            {
+                "id":"Help",
+                "label":"Pagalba"
+            },
+            {
+                "id":"Content"
+            }
+        ]
+    }
+}

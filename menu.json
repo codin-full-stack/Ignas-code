@@ -1,0 +1,46 @@
+{
+    "menu":{
+        "header":"SVG Viewer",
+        "items":[
+            {
+                "id":"index.php",
+                "label": "Titulinis"
+            },
+            {
+                "id":"loginPage.php",
+                "label": "Login MySQL"
+            },
+            {
+                "id":"signIn.php",
+                "label":"Naujas vartotojas"
+            },
+            {
+                "id":"updateUserForm.php",
+                "label":"Pakeisti vartotojo duomenis"
+            },
+            {
+                "id":"json_return.php",
+                "label":"Vartotojai"
+            },
+            {
+                "id":"search.php",
+                "label":"Surasti"
+            },
+            {
+                "id":"post_newForm.php",
+                "label":"Naujas įrašas"
+            },
+            {
+                "id":"feed.php",
+                "label": "Showcase"
+            },
+            {
+                "id":"Help",
+                "label":"Pagalba"
+            },
+            {
+                "id":"Content"
+            }
+        ]
+    }
+}

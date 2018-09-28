@@ -1,0 +1,44 @@
+{
+    "menu":{
+        "header":"SVG Viewer",
+        "items":[
+            {
+                "id":"index.php",
+                "label": "Titulinis"
+            },
+            {
+                "id":"signIn.php",
+                "label":"Naujas vartotojas"
+            },
+            null,
+            {
+                "id":"json_return.php",
+                "label":"Vartotojai"
+            },
+            {
+                "id":"Photos",
+                "label":"Galerija"
+            },
+            null,
+            {
+                "id":"tuscia",
+                "label": "tuscia"
+            },
+            {
+                "id":"search.php",
+                "label":"Surasti"
+            },
+            {
+                "id":"Contacts",
+                "label":"Kontaktai"
+            },
+            {
+                "id":"Help",
+                "label":"Pagalba"
+            },
+            {
+                "id":"Content"
+            }
+        ]
+    }
+}
