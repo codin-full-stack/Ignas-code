@@ -1,12 +1,9 @@
 html {
     box-sizing: border-box;
   }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
 
 .logmod {
-    display: block;
+    display: flex;
     position: fixed;
     top: 0;
     right: 0;
@@ -18,10 +15,11 @@ html {
 }
 
 .logmod__wrapper {
-    display: block;
+    display: flex;
     background: #FFF;
     position: relative;
-    max-width: 550px;
+    width: 500px;
+    height: 300;
     border-radius: 4px;
     box-shadow: 0 0 18px rgba(#000, 0.2);
     margin: 120px auto;
@@ -30,5 +28,129 @@ html {
 .logmod__container  {
     overflow: hidden;
     width: 100%;
+    border-radius: 4px;
 }
 
+.logmod__tab-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.logmod__tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab {
+    width: 50%;
+    position: relative;
+    float: left;
+    text-align: center;
+    background: #809191;
+    line-height: 72px;
+    height: 72px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tab-active {
+    background: #FFF;
+}
+
+.inputs .input {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 71px;
+    padding: 11px 24px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: none;
+    float: left;
+    background-color: #FFF;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.inputs .input label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.inputs .input input {
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    font-size: 15px;
+    line-height: 19.2px;
+    color: #555;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-shadow: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgba(75, 89, 102, 0.85);
+}
+
+  .inputs .hide-password {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 15px;
+    border-left: 1px solid #e4e4e4;
+    font-size: 14px;
+    background: #FFF;
+    overflow: hidden;
+    color: #444;
+    cursor: pointer;
+    margin-top: 12px;
+    line-height: 48px;
+}
+
+.inputs .input.active {
+  background: #eee;
+}
+.inputs .input.active .hide-password {
+  background: #eee;
+}
+.inputs .input.full {
+  width: 100%;
+}
+
+.form__actions .sumbit {
+    height: 48px;
+    color: #FFF;
+    width: 50%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    background: #4CAF50;
+    margin-top: 7px;
+    margin-left: 235px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 6px 16px 0 rgba(14, 104, 36, 0.24), 0 8px 30px 0 rgba(0,0,0,0.19);
+}
+
+.inputs {
+    border-bottom: 1px solid #E5E5E5;
+}
