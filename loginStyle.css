@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
   }
 
 .logmod {
@@ -19,9 +20,8 @@ html {
     background: #FFF;
     position: relative;
     width: 500px;
-    height: 300;
+    height: max-content;
     border-radius: 4px;
-    box-shadow: 0 0 18px rgba(#000, 0.2);
     margin: 120px auto;
 }
 
@@ -52,18 +52,37 @@ html {
     line-height: 72px;
     height: 72px;
     text-decoration: none;
-    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
 }
 
 .tab-active {
+    width: 50%;
+    position: relative;
+    float: left;
     background: #FFF;
+    text-align: center;
+    line-height: 72px;
+    height: 72px;
+    text-decoration: none;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    
 }
 
-.inputs .input {
-    display: inline-block;
+.inputs{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 50%;
     height: 71px;
@@ -76,25 +95,23 @@ html {
     box-sizing: border-box;
 }
 
-.inputs .input label {
+.label {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     display: block;
     width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
     line-height: 24px;
 }
 
-.inputs .input input {
+.input {
     position: relative;
     display: inline-block;
     height: 24px;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 19.2px;
     color: #555;
     border-radius: 4px;
@@ -107,8 +124,9 @@ html {
     padding: 0;
     cursor: pointer;
     background-color: transparent;
-    color: rgba(75, 89, 102, 0.85);
+    color: #000;
 }
+
 
   .inputs .hide-password {
     display: flex;
@@ -124,16 +142,6 @@ html {
     cursor: pointer;
     margin-top: 12px;
     line-height: 48px;
-}
-
-.inputs .input.active {
-  background: #eee;
-}
-.inputs .input.active .hide-password {
-  background: #eee;
-}
-.inputs .input.full {
-  width: 100%;
 }
 
 .form__actions .sumbit {
@@ -152,5 +160,38 @@ html {
 }
 
 .inputs {
+    display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid #E5E5E5;
+    max-height: 216px;
+    overflow-y: scroll;
+}
+
+logmod_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+}
+
+.radio-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.check_news {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.check_rules {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.block:nth-child(9) {
+    width: 100%;
+}
+
+.block:last-child {
+    width: 100%;
 }
