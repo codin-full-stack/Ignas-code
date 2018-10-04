@@ -1,18 +1,25 @@
-html {
+* {
     box-sizing: border-box;
+}
+
+html {
     font-family: 'Open Sans', sans-serif;
-  }
+}
+
+body {
+    background-image: url(https://wallpaper-house.com/data/out/12/wallpaper2you_475249.jpg);
+    padding-top: 70px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Logino ir registracijos stilius */
 
 .logmod {
     display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-    background: #4AA272;
-    z-index: 1
 }
 
 .logmod__wrapper {
@@ -20,7 +27,6 @@ html {
     background: #FFF;
     position: relative;
     width: 500px;
-    height: max-content;
     border-radius: 4px;
     margin: 120px auto;
 }
@@ -194,4 +200,30 @@ logmod_form {
 
 .block:last-child {
     width: 100%;
+}
+
+/* top navigation stilius */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav_section {
+    color: #6d5f5f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_section:hover {
+    background-color: #555;
+    color: white;
+}
+
+.nav_section-active {
+    background-color: #4CAF50;
+    color: white;
 }
