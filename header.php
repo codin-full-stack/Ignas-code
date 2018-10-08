@@ -5,6 +5,7 @@ include 'config.php';
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>Ignas Jurevicius</title>
     <link rel="stylesheet" href="loginStyle.css">
 </head>
@@ -16,15 +17,15 @@ include 'config.php';
         </div>
 
         <div class="nav_section">
-            <a href="loginStyle.php" class="nav_section">Prisijungimas</a>
+            <a href="loginStyle.php">Prisijungimas</a>
         </div>
 
         <div class="nav_section">
-            <a href="post_newForm.php" class="nav_section">Naujas straipsnis</a>
+            <a href="post_newForm.php">Naujas straipsnis</a>
         </div>
 
         <div class="nav_section">
-            <a href="feedStyle.php" class="nav_section">Vitrina</a>
+            <a href="feed.php">Vitrina</a>
         </div>
 
     </div>
