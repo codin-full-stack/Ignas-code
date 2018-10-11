@@ -28,4 +28,12 @@ include 'config.php';
             <a href="feed.php">Vitrina</a>
         </div>
 
+        <div class="nav_section">
+            <a href="sheet.php">Lentelė</a>
+        </div>
+
+        <div class="nav_section">
+            <a href="script.js">JavaScript</a>
+        </div>
+
     </div>

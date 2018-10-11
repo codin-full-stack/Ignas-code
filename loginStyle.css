@@ -16,6 +16,46 @@ a {
     text-decoration: none;
 }
 
+table {
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    position: relative;
+    width: 500px;
+    height: auto;
+    border-radius: 4px;
+    margin: 120px auto;
+    padding: 10px;
+}
+
+/* naujo straipsnio kūrimas */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    position: relative;
+    width: 500px;
+    height: auto;
+    border-radius: 4px;
+    margin: 120px auto;
+    padding: 10px;
+}
+
+.article_box {
+    border-style: groove;
+    border-radius: 4px;
+    display:block;/*reset from inline*/
+    width:100%;
+    height: auto;
+    margin:0;/*remove defaults*/
+    padding:4px;
+    background:#EEF;
+    border:1px solid #333;
+    overflow-y:auto;/*resets IE*/
+    overflow-x:hidden;/*resets IE*/
+}
+
 /* Logino ir registracijos stilius */
 
 .logmod {
@@ -40,7 +80,7 @@ a {
 .logmod__tab-wrapper {
     width: 100%;
     height: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .logmod__tabs {
