@@ -33,7 +33,7 @@ include 'config.php';
         </div>
 
         <div class="nav_section">
-            <a href="script.js">JavaScript</a>
+            <a href="JSfeed.php">JS feed</a>
         </div>
 
     </div>

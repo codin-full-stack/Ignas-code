@@ -1,5 +1,5 @@
-var congrat = 'Sveikutis pasaulėli!!!';
-document.getElementById("hello").innerHTML = congrat;
+// var congrat = 'Sveikutis pasaulėli!!!';
+// document.getElementById("hello").innerHTML = congrat;
 
 
 
@@ -26,3 +26,21 @@ var x = setInterval(function() {
 
 
 // alert(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+
+function selectOne() {
+    var el = document.querySelector(".xmash1");
+    // var emptyEl = document.querySelector(".empty");
+//delete old el
+
+//
+    
+
+    // emptyEl.innerHTML = el.innerHTML;
+    el.style.backgroundColor = "red";
+}
+
+function selectAll() {
+
+    var articles = container.querySelectorAll(".post1");
+    
+}
