@@ -11,7 +11,11 @@ if (mysqli_num_rows($result) > 0) {
 
 <div class="page_name">
 <h1>Straipsnių rodymas</h1>
+<button class="loop">Prasuk</button>
+
 </div>
+
+
 <?php
     while ($post = $result->fetch_assoc()) {
         $userid = $post['user_ID'];

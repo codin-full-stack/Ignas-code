@@ -32,8 +32,13 @@ include 'config.php';
             <a href="sheet.php">Lentelė</a>
         </div>
 
-        <div class="nav_section">
-            <a href="JSfeed.php">JS feed</a>
+        <div class="dropdown">
+            <button onclick="dropdown()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
         </div>
 
     </div>

@@ -297,14 +297,18 @@ logmod_form {
     }
 }
 
+
 /* Galima kurti kiek tik nori breakpointu pritaikant bet kokiam prietaiso modeliui, ieškoti listų su išmatavimais ir t.t. ----------- */
 
 .page_name {
+    display: flex;
+    flex-direction: row;
     grid-column-start: 1; 
     grid-column-end: 4; 
     grid-row-start: 1; 
     grid-row-end: 1; 
     width: 100%;
+    height: 600px;
     padding: 10px;
     text-align: center;
 }
@@ -320,6 +324,13 @@ logmod_form {
     padding: 10px;
     background: #FFF;
     border-radius: 4px;
+}
+
+.post1:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4; 
 }
 
 .post1:nth-child(2) {
@@ -405,3 +416,51 @@ button {
     border-radius: 5px;
     box-shadow: 0 6px 16px 0 rgba(14, 104, 36, 0.24), 0 8px 30px 0 rgba(0,0,0,0.19);
 }
+
+/* dropdown stilius */
+
+.dropdown {
+    color: #6d5f5f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropbtn {
+    background-color: none;
+    color: #6d5f5f;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+.show {display:block;}
