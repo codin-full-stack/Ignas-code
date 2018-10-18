@@ -9,36 +9,14 @@ include 'config.php';
     <title>Ignas Jurevicius</title>
     <link rel="stylesheet" href="loginStyle.css">
 </head>
-<body>
-    <div class="nav" name="topNav">
-            
-        <div class="nav_section">
-            <a href="index.php">Titulinis</a>
-        </div>
+<body> 
+    <ul name="topNav" class="nav" id="nav">
+        <a href="index.php">Titulinis</a>
+        <a href="loginStyle.php">Prisijungimas</a>
+        <a href="post_newForm.php">Naujas straipsnis</a>
+        <a href="feed.php">Vitrina</a>
+        <a href="sheet.php">Lentelė</a>
+        <a href="calculator.php">Skaičiuoklė</a>
+    </ul>
+    <a class="icon"></a>
 
-        <div class="nav_section">
-            <a href="loginStyle.php">Prisijungimas</a>
-        </div>
-
-        <div class="nav_section">
-            <a href="post_newForm.php">Naujas straipsnis</a>
-        </div>
-
-        <div class="nav_section">
-            <a href="feed.php">Vitrina</a>
-        </div>
-
-        <div class="nav_section">
-            <a href="sheet.php">Lentelė</a>
-        </div>
-
-        <div class="dropdown">
-            <button onclick="dropdown()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-
-    </div>

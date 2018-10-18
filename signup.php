@@ -1,6 +1,7 @@
 <?php
 include 'header.php';
 ?>
+
 <div class="logmod">
     <div class="logmod__wrapper">
         <div class="logmod__container">
@@ -11,7 +12,28 @@ include 'header.php';
             <div class="logmod__tab-wrapper">
                 <div class="logmod__tab tab-2">
                     <div class="logmod__form">
-                        <form accept-charset="utf-8" action="" class="form">
+
+                    <?php
+                    if ($_POST['pass'] == $_POST['pass_con']) {
+                        $_POST['pass'] = md5($_POST['pass']);
+                        unset($_POST['pass_con']);
+                        
+                        // arrayToJsonFile($_POST, $filename);
+                        
+                        $sql = 'INSERT INTO users (first_name, second_name, age, email, city, gender, pass) VALUES ("' . $_POST['name'] . '","' . $_POST['surname'] . '",' . $_POST['age'] . ',"' . $_POST['email'] . '","' . $_POST['city'] . '","' . $_POST['gender'] . '","' . $_POST['pass'] . '")';
+                        
+                        if (mysqli_query($conn, $sql)) {
+                            echo "New record created successfully";
+                        } else {
+                            echo "Failed to connect to MySQL";
+                        }
+
+                    } else {
+                        echo "Slaptažodžiai nesutampa!";
+                    }   
+                    ?>
+                    
+                        <form accept-charset="utf-8" action="" class="form" method="POST">
                             <div class="inputs">
                                 <div class="block">
                                     <label class="label" for="email">Elektroninis paštas*</label>
@@ -19,11 +41,11 @@ include 'header.php';
                                 </div>
                                 <div class="block">
                                     <label class="label" for="pass">Slaptažodis*</label>
-                                    <input class="input" maxlength="255" id="pass" name="pass" placeholder="Slaptažodis" type="text" size="50" required/>
+                                    <input class="input" maxlength="255" id="pass" name="pass" placeholder="Slaptažodis" type="password" size="50" required/>
                                 </div>
                                 <div class="block">
                                     <label class="label" for="rpt_pass">Pakartokite slaptažodį*</label>
-                                    <input class="input" maxlength="255" placeholder="Pakartokite slaptažodį" id="rpt_pass" name="pass_con" type="text" size="50" required/>
+                                    <input class="input" maxlength="255" placeholder="Pakartokite slaptažodį" id="rpt_pass" name="pass_con" type="password" size="50" required/>
                                 </div>
                                 <div class="block">
                                     <label class="label" for="name">Vardas*</label>
@@ -83,7 +105,7 @@ include 'header.php';
                                 </div> 
                             </div>
                             <div class="form__actions">
-                                <input class="sumbit" name="commit" type="sumbit" value="Registruotis" />
+                                <input class="submit" name="commit" type="submit" value="Registruotis" />
                             </div> 
                         </form>
                     </div> 

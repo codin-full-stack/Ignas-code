@@ -12,7 +12,7 @@ if ($_POST['pass'] == $_POST['pass_con']) {
     
     // arrayToJsonFile($_POST, $filename);
     
-    $sql = 'INSERT INTO users (first_name, second_name, age, email, city, gender, comment, pass) VALUES ("' . $_POST['name'] . '","' . $_POST['surname'] . '",' . $_POST['age'] . ',"' . $_POST['email'] . '","' . $_POST['city'] . '","' . $_POST['gender'] . '","' . $_POST['comentBox'] . '","' . $_POST['pass'] . '")';
+    $sql = 'INSERT INTO users (first_name, second_name, age, email, city, gender, pass) VALUES ("' . $_POST['name'] . '","' . $_POST['surname'] . '",' . $_POST['age'] . ',"' . $_POST['email'] . '","' . $_POST['city'] . '","' . $_POST['gender'] . '","' . $_POST['pass'] . '")';
     
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";

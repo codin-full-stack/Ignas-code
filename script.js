@@ -41,20 +41,29 @@ function selectOne() {
 }
 
 
-
 var clickEl = document.querySelector('.loop');
 
-clickEl.addEventListener('click', function () {
+if(clickEl) {
+    clickEl.addEventListener('click', function () {
 
-    var myNodeList = document.querySelectorAll(".post_name");
+        var myNodeList = document.querySelectorAll(".post_name");
 
-    for (var a = 0; myNodeList.length > a; a++) {
-        myNodeList[a].style.backgroundColor = "yellow";
-    }
+        for (var a = 0; myNodeList.length > a; a++) {
+            myNodeList[a].style.backgroundColor = "yellow";
+        }
 
-});
-
-
-function dropdown() {
-    div.classList.replace("dropdown", "dropdown_content");
+    });
 }
+
+
+
+var navEl = document.querySelector("#nav");
+var hamEl = document.querySelector('.icon');
+
+hamEl.addEventListener('click', function(){
+    if(navEl.classList.contains('responsive')) {
+        navEl.classList.remove('responsive');
+    } else {
+        navEl.classList.add('responsive');
+    }
+});

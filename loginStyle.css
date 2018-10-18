@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-image: url(https://wallpaper-house.com/data/out/12/wallpaper2you_475249.jpg);
+    background-image: url(http://hdqwalls.com/wallpapers/3d-cube-background-4k-yo.jpg);
     padding-top: 70px;
 }
 
@@ -245,28 +245,69 @@ logmod_form {
 /* top navigation stilius */
 
 .nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.nav_section {
-    color: #6d5f5f;
+.nav.responsive {
+    display: block;
+}
+
+.nav a {
+    color: #9b9696;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
-.nav_section:hover {
+.nav a:hover {
     background-color: #555;
     color: white;
 }
 
-.nav_section-active {
+.active {
     background-color: #4CAF50;
     color: white;
 }
+
+.icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
 
 /* post ir feed stiliai */
 
@@ -427,24 +468,13 @@ button {
     font-size: 17px;
 }
 
-.dropbtn {
-    background-color: none;
-    color: #6d5f5f;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
 .dropbtn:hover, .dropbtn:focus {
     background-color: #555;
     color: white;
 }
 
 .dropdown-content {
-    display: flex;
-    flex-direction: column;
+    display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -460,7 +490,84 @@ button {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd
+    background-color: #ddd;
 }
 
-.show {display:block;}
+.show {
+    display:block;
+}
+
+
+/* skaiciuotuvo stilius */
+
+.calculator {
+    font-family: 'Roboto', sans-serif;
+    height: 482px;
+    width: 345px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.display {
+    height: 25%;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgba(5, 5, 5, 0.4);
+}
+
+.buttonField {
+    display: flex;
+    flex-wrap: wrap;
+    height: 75%;
+    width: 100%;
+    background-color: #515A7D;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.ctrlBar {
+    height: 25%;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.resultBar {
+    height: 75%;
+    width: 100%;
+}
+
+.resultBar input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    text-align: right;
+    font-size: 65px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.resultBar input::placeholder {
+    color: #FFF;
+}
+
+.calcBtn {
+    width: 25%;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 28px;
+    
+}
+
+
+.calcBtn:nth-child(17) {
+    width: 50%;
+    text-align: left;
+    padding: 10px 36px;
+}
+
+.comandBtn {
+    color: #B6BAC8;
+}
