@@ -6,6 +6,9 @@ include 'header.php';
     
     <div class="display">
         <div class='ctrlBar'>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
 
         <div class='resultBar'>

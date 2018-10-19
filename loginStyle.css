@@ -247,6 +247,11 @@ logmod_form {
 .nav {
     margin: 0;
     padding: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
     overflow: hidden;
     background-color: #333333;
     display: flex;
@@ -506,6 +511,7 @@ button {
     width: 345px;
     margin: auto;
     border-radius: 8px;
+    box-shadow: 0 8px 30px 0 rgba(190, 188, 28, 0.25), 0 8px 30px 0 rgba(190,188,28,0.25);
 }
 
 .display {
@@ -528,6 +534,7 @@ button {
     height: 25%;
     width: 100%;
     border-radius: 8px 8px 0px 0px;
+    padding-top: 10px;
 }
 
 .resultBar {
@@ -542,6 +549,7 @@ button {
     width: 100%;
     color: #ffffff;
     text-align: right;
+    padding-right: 30px;
     font-size: 65px;
     font-family: 'Roboto', sans-serif;
 }
@@ -570,4 +578,31 @@ button {
 
 .comandBtn {
     color: #B6BAC8;
+}
+
+.calcBtn:hover {
+    background-color: #555;
+    color: rgb(165, 163, 39);
+}
+
+.dot {
+    margin-right: 10px;
+    height: 16px;
+    width: 16px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot:first-child {
+    margin-left: 10px;
+    background-color: #FF554E;
+}
+
+.dot:nth-child(2) {
+    background-color: #FFBE2F;
+}
+
+.dot:nth-child(3) {
+    background-color: #29CA41;
 }
